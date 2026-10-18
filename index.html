@@ -33,7 +33,7 @@
         .card {
             background: white;
             width: 280px;
-            padding: 20px;
+            padding: 25px 20px;
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.05);
             transition: transform 0.2s;
@@ -41,8 +41,20 @@
         .card:hover {
             transform: translateY(-5px);
         }
+
+        /* 🖼️ 추가된 프로필 이미지 스타일 */
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #0064FF;
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+
         .card h3 {
-            margin: 15px 0 5px 0;
+            margin: 10px 0 5px 0;
             color: #111;
         }
         .card p {
@@ -74,15 +86,20 @@
     <!-- 스트리머 카드 목록 영역 -->
     <div class="card-container">
         
-        <!-- 스트리머 1 -->
+        <!-- 스트리머 1 (김봉준) -->
         <div class="card">
+            <!-- 사진 파일 이름을 src에 넣으시면 됩니다 (예: profile.jpg) -->
+
+            <img class="profile-img" src="https://stimg.sooplive.com/LOGO/kh/khm11903/khm11903.webp" alt="김봉준 프로필">
             <h3>김봉준</h3>
             <p>소통 및 게임 방송 주력</p>
-            <a href="https://www.sooplive.co.kr/station/khm11903" target="_blank" class="btn">방송국 바로가기</a>
+            <a href="https://ch.sooplive.co.kr/rlawkddbs" target="_blank" class="btn">방송국 바로가기</a>
         </div>
 
         <!-- 스트리머 2 -->
         <div class="card">
+            <!-- 두 번째 스트리머 사진 (웹 이미지 주소나 새 파일 이름) -->
+            <img class="profile-img" src="profile2.jpg" alt="스트리머 프로필">
             <h3>스트리머 닉네임 2</h3>
             <p>저녁 주말 고정 방송</p>
             <a href="https://www.sooplive.co.kr" target="_blank" class="btn">방송국 바로가기</a>
