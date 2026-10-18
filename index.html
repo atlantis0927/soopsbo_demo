@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 최애 스트리머 팬 페이지</title>
+    <style>
+        /* 전체적인 배경과 글씨체 설정 */
+        body {
+            font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 40px 20px;
+            color: #333;
+            text-align: center;
+        }
+        h1 {
+            color: #0064FF;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 40px;
+        }
+        /* 스트리머 카드를 감싸는 박스 */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        /* 개별 스트리머 카드 디자인 */
+        .card {
+            background: white;
+            width: 280px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            margin: 15px 0 5px 0;
+            color: #111;
+        }
+        .card p {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        /* 방송국 바로가기 버튼 */
+        .btn {
+            display: inline-block;
+            background-color: #0064FF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: #0052cc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>⭐ SOOP Streamer Fan Page</h1>
+    <p class="subtitle">제가 응원하는 스트리머들의 미니 공간입니다.</p>
+
+    <!-- 스트리머 카드 목록 영역 -->
+    <div class="card-container">
+        
+        <!-- 스트리머 1 -->
+        <div class="card">
+            <h3>김봉준</h3>
+            <p>소통 및 게임 방송 주력</p>
+            <a href="https://www.sooplive.co.kr/station/khm11903" target="_blank" class="btn">방송국 바로가기</a>
+        </div>
+
+        <!-- 스트리머 2 -->
+        <div class="card">
+            <h3>스트리머 닉네임 2</h3>
+            <p>저녁 주말 고정 방송</p>
+            <a href="https://www.sooplive.co.kr" target="_blank" class="btn">방송국 바로가기</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
